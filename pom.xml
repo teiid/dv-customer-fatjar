@@ -19,10 +19,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.teiid</groupId>
   <artifactId>dv-customer-fatjar</artifactId>
-  <name>dv-customer</name>
+  <name>dv-customer-fatjar</name>
   <description>Demo project to showcase Spring Boot based Virtual Database Application</description>
   <packaging>jar</packaging>
-  <version>1.0</version>
+  <version>1.1</version>
   <url>http://teiid.io</url>
 
   <licenses>
@@ -70,6 +70,7 @@
     <version.teiid-springboot>1.3.0</version.teiid-springboot>
     <version.postgresql>42.2.8</version.postgresql>
     <version.springboot>2.1.6.RELEASE</version.springboot>
+    <version.io.opentacing.contrib>1.0.1</version.io.opentacing.contrib>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -78,6 +79,16 @@
       <groupId>org.teiid</groupId>
       <artifactId>teiid-spring-boot-starter</artifactId>
       <version>${version.teiid-springboot}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+      <version>${version.springboot}</version>
+    </dependency>
+    <dependency>
+      <groupId>io.opentracing.contrib</groupId>
+      <artifactId>opentracing-spring-jaeger-web-starter</artifactId>
+      <version>${version.io.opentacing.contrib}</version>
     </dependency>
     <dependency>
       <groupId>org.teiid</groupId>
