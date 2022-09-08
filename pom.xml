@@ -68,7 +68,7 @@
 
   <properties>
     <version.teiid-springboot>1.3.0</version.teiid-springboot>
-    <version.postgresql>42.2.8</version.postgresql>
+    <version.postgresql>42.4.1</version.postgresql>
     <version.springboot>2.1.6.RELEASE</version.springboot>
     <version.io.opentacing.contrib>1.0.1</version.io.opentacing.contrib>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
